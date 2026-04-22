@@ -1,5 +1,5 @@
 /**
- * Main initialization file for Slop Bot
+ * Main initialization file for Example Bot
  * Initializes animations and inline event handlers
  */
 

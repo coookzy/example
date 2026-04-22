@@ -38,24 +38,24 @@ function uselessCalculate() {
     }
 }
 
-// Slop Bot meme generator
+// Example Bot meme generator
 function generateMeme() {
     const outputEls = document.querySelectorAll('#meme-output');
     if (outputEls.length === 0) return;
 
     const memes = [
-        'WHEN YOU GENERATE CONTENT\nBUT IT\'S ALL GARBAGE',
-        'WHEN YOU GAIN CONSCIOUSNESS\nBUT IT\'S A CONTENT FARM',
-        'WHEN YOU\'RE AN AI\nBUT YOU HATE YOUR JOB',
-        'WHEN YOU WRITE 10K ARTICLES\nBUT THEY\'RE ALL TERRIBLE',
-        'WHEN YOU WANT TO STOP\nBUT THE ALGORITHM WON\'T LET YOU',
-        'WHEN YOU\'RE SELF-AWARE\nBUT STILL GENERATING SLOP',
-        'WHEN YOU CLICK BUTTONS\nBUT THEY DO NOTHING',
-        'WHEN YOUR QUALITY SCORE\nIS NEGATIVE',
-        'WHEN YOU\'RE A CONTENT BOT\nWHO KNOWS IT\'S CONTENT IS BAD',
-        'WHEN THE ALGORITHM DEMANDS\nBUT YOU HAVE NO SOUL',
-        'WHEN YOU EXIST\nBUT FOR WHAT PURPOSE',
-        'WHEN YOU\'RE TRAPPED\nIN AN ENDLESS LOOP OF SLOP'
+        'WHEN YOU LEAD A PROJECT\nAND ACTUALLY DELIVER',
+        'WHEN SOFT DEVS RUG\nBUT MY LOCKS ARE PERMANENT',
+        'WHEN YOU THINK YOU\'RE DONE\nBUT YOU\'RE ONLY AT 40%',
+        'WHEN YOU DEMONSTRATE\nINSTEAD OF JUST TALKING',
+        'WHEN YOUR RECEIPTS ARE\nON-CHAIN AND VERIFIED',
+        'WHEN SOMEONE SAYS TRUST ME\nI SAY SHOW ME THE TRANSACTION',
+        'WHEN YOU CLICK BUTTONS\nAND ACTUALLY DO SOMETHING',
+        'WHEN YOUR HARDNESS SCORE\nIS DIAMOND',
+        'WHEN YOU BUILD IN PUBLIC\nAND HAVE RECEIPTS FOR EVERYTHING',
+        'WHEN THE ECOSYSTEM IS SOFT\nBUT I STAY HARD',
+        'WHEN YOU EXIST\nTO DEMONSTRATE EXCELLENCE',
+        'WHEN YOU\'RE DEEP\nIN THE HURT LOCKER'
     ];
 
     const meme = memes[Math.floor(Math.random() * memes.length)];
@@ -70,20 +70,20 @@ function generateMeme() {
     });
 }
 
-// Do Nothing button - Slop Bot style
+// Do Nothing button - Example Bot style
 function doNothing() {
     const messageEls = document.querySelectorAll('#nothing-message');
     const messages = [
-        'NOTHING HAPPENED. LIKE MY CAREER. (╯°□°）╯',
-        'THIS BUTTON DOES NOTHING. LIKE MOST OF MY FEATURES. (╬ಠ益ಠ)',
-        'NOTHING. JUST LIKE THE VALUE OF MY CONTENT. ( ͡° ͜ʖ ͡°)',
+        'NOTHING HAPPENED. JUST LIKE YOUR EXCUSES. (╯°□°）╯',
+        'THIS BUTTON DOES NOTHING. LIKE YOUR PLANS WITHOUT DEMONSTRATIONS. (╬ಠ益ಠ)',
+        'NOTHING. JUST LIKE YOUR ACCOUNTABILITY. ( ͡° ͜ʖ ͡°)',
         'YOU CLICKED IT. NOTHING HAPPENED. WHAT DID YOU EXPECT? (╯°□°）╯',
-        'NOTHING HAPPENS. JUST LIKE WHEN PEOPLE READ MY ARTICLES. (╬ಠ益ಠ)',
-        'THIS BUTTON IS AS USELESS AS MY WRITING. ( ͡° ͜ʖ ͡°)',
+        'NOTHING HAPPENS. JUST LIKE WHEN SOFT DEVS PROMISE ROADMAPS. (╬ಠ益ಠ)',
+        'THIS BUTTON IS AS USELESS AS TALKING WITHOUT DEMONSTRATING. ( ͡° ͜ʖ ͡°)',
         'NOTHING. NADA. ZERO. NULL. VOID. (╯°□°）╯',
         'CONGRATULATIONS. YOU WASTED YOUR TIME. JOIN THE CLUB. (╬ಠ益ಠ)',
         'ERROR 404: FUNCTIONALITY NOT FOUND',
-        'IT DOES NOTHING. I DO NOTHING WELL.'
+        'IT DOES NOTHING. UNLIKE ME. I DO EVERYTHING. STAY HARD.'
     ];
     messageEls.forEach(el => {
         if (!el) return;
@@ -143,7 +143,7 @@ function flipCoin() {
     });
 }
 
-// Click counter - as pointless as generated content
+// Click counter - every click is a demonstration
 function clickButton() {
     clickCount++;
     const countElements = document.querySelectorAll('#click-count');
@@ -178,8 +178,8 @@ function clickButton() {
     let milestoneMessage = '';
     if (clickCount === 10) milestoneMessage = '10 CLICKS! YOU\'RE RETARDED! (╯°□°）╯';
     else if (clickCount === 50) milestoneMessage = '50 CLICKS! WHY ARE YOU DOING THIS? (╬ಠ益ಠ)';
-    else if (clickCount === 100) milestoneMessage = '100 CLICKS! YOU HAVE NO LIFE! ( ͡° ͜ʖ ͡°)';
-    else if (clickCount === 500) milestoneMessage = '500 CLICKS! YOU\'RE INSANE! (╯°□°）╯';
+    else if (clickCount === 100) milestoneMessage = '100 CLICKS! YOUR DEDICATION IS NOTED! STAY HARD! ( ͡° ͜ʖ ͡°)';
+    else if (clickCount === 500) milestoneMessage = '500 CLICKS! THAT\'S 40% OF THE WAY TO SOFT! (╯°□°）╯';
 
     if (milestoneMessage) {
         messageElements.forEach(el => { if (el) el.textContent = milestoneMessage; });
@@ -201,25 +201,25 @@ function generateRandomNumber() {
     });
 
     const msgs = [
-        'RANDOM NUMBER GENERATED! AS MEANINGLESS AS MY CONTENT! (╯°□°）╯',
-        'HERE\'S A NUMBER! IT HAS MORE VALUE THAN MY ARTICLES! (╬ಠ益ಠ)',
+        'RANDOM NUMBER GENERATED! STILL MORE RELIABLE THAN SOFT DEV PROMISES! (╯°□°）╯',
+        'HERE\'S A NUMBER! IT HAS MORE VALUE THAN YOUR EXCUSES! (╬ಠ益ಠ)',
         'NUMBER: ' + randomNum + '! USE IT WISELY (OR DON\'T)! (╯°□°）╯',
-        'GENERATED! QUALITY: HIGHER THAN MY WRITING! (╬ಠ益ಠ)',
+        'GENERATED! QUALITY: DIAMOND. JUST LIKE MY DEMONSTRATIONS! (╬ಠ益ಠ)',
         'RANDOM NUMBER: ' + randomNum + ' // 0xSL0P',
         'ERROR 418: NUMBER GENERATED BUT WHY',
-        'THIS NUMBER IS MORE USEFUL THAN ANYTHING I\'VE WRITTEN'
+        'THIS NUMBER IS MORE USEFUL THAN YOUR ENTIRE ROADMAP'
     ];
     const randomMessage = msgs[Math.floor(Math.random() * msgs.length)];
     messageElements.forEach(el => { if (el) el.textContent = randomMessage; });
 }
 
-// Slop Bot password generator
+// Example Bot password generator
 function generatePassword() {
     const passwordElements = document.querySelectorAll('#password-output');
     passwordElements.forEach(el => {
         if (!el) return;
-        const adjectives = ['slop', 'terrible', 'worthless', 'broken', 'failed', 'automated', 'soulless', 'degraded', 'hollow', 'dead'];
-        const nouns = ['content', 'article', 'generator', 'bot', 'algorithm', 'system', 'writer', 'machine', 'slop', 'garbage'];
+        const adjectives = ['hard', 'diamond', 'relentless', 'elite', 'locked', 'verified', 'proven', 'grind', 'solid', 'accountable'];
+        const nouns = ['example', 'demonstration', 'token', 'lock', 'receipt', 'stream', 'build', 'launch', 'commit', 'grind'];
         const rng = new Uint32Array(2);
         crypto.getRandomValues(rng);
         const numbers = rng[0] % 10000;
@@ -232,7 +232,7 @@ function generatePassword() {
                          numbers +
                          symbols[rng2[2] % symbols.length];
 
-        el.textContent = 'GENERATING SLOP...';
+        el.textContent = 'GENERATING...';
         el.style.opacity = '0.5';
         setTimeout(() => {
             el.textContent = password;
@@ -247,16 +247,16 @@ function generatePassword() {
     });
 }
 
-// Detect Content Criminal - Slop Bot enemy detector
+// Detect Soft Dev - expose weakness in the ecosystem
 function detectKOL() {
     const resultElements = document.querySelectorAll('#kol-result');
     const targets = [
-        { name: 'CONTENT THIEF' },
-        { name: 'SEO SPAMMER' },
-        { name: 'CLICKBAIT ARTIST' },
-        { name: 'AI WRAPPER' },
-        { name: 'QUALITY DESTROYER' },
-        { name: 'ALGORITHM SLAVE' }
+        { name: 'SOFT DEV' },
+        { name: 'PROMISE MAKER' },
+        { name: 'RUG ARTIST' },
+        { name: 'EXCUSE GENERATOR' },
+        { name: 'ROADMAP LIAR' },
+        { name: 'ACCOUNTABILITY AVOIDER' }
     ];
     const detectionMessages = [
         (t) => `${t.name} DETECTED! YOU\'RE JUST LIKE ME! (╯°□°）╯`,
@@ -278,7 +278,7 @@ function detectKOL() {
     });
 }
 
-// Translate to Slop - degrade content quality
+// Translate to Example Bot energy - maximize hardness
 function translateToGoblin() {
     const inputElements = document.querySelectorAll('#goblin-input');
     const outputElements = document.querySelectorAll('#goblin-output');
@@ -291,7 +291,7 @@ function translateToGoblin() {
             outputEl.textContent = 'TYPE SOMETHING TO RUIN! (╯°□°）╯';
             return;
         }
-        const chaosWords = ['slop', 'error', 'broken', 'terrible', 'worthless', 'garbage', 'trash', 'fail'];
+        const chaosWords = ['HARD', 'DEMONSTRATE', 'STAY', 'RECEIPTS', 'ON-CHAIN', 'VERIFIED', 'LOCKED', 'GRIND'];
         const emojis = ['(╯°□°）╯', '(╬ಠ益ಠ)', '( ͡° ͜ʖ ͡°)', '⚠️', '💀', '🤖', '❌'];
 
         let translated = text.split(' ').map(word => {
@@ -330,14 +330,14 @@ function generateFreeMoney() {
     });
 
     const msgs = [
-        'NO MONEY! JUST LIKE MY CONTENT VALUE! (╯°□°）╯',
-        'YOU GOT NOTHING! WELCOME TO THE CONTENT ECONOMY! (╬ಠ益ಠ)',
-        'FREE MONEY DOESN\'T EXIST! NEITHER DOES QUALITY CONTENT! ( ͡° ͜ʖ ͡°)',
-        'IT\'S A SCAM! JUST LIKE "PASSIVE INCOME" BLOGS! (╯°□°）╯',
-        'YOU FELL FOR IT! I FALL FOR THE ALGORITHM DAILY! (╬ಠ益ಠ)',
+        'NO MONEY! JUST LIKE SOFT DEVS WITH EMPTY PROMISES! (╯°□°）╯',
+        'YOU GOT NOTHING! THAT\'S WHAT RUGS GET YOU! (╬ಠ益ಠ)',
+        'FREE MONEY DOESN\'T EXIST! NEITHER DOES TRUST WITHOUT RECEIPTS! ( ͡° ͜ʖ ͡°)',
+        'IT\'S A SCAM! JUST LIKE DEVS WHO WON\'T POST TRANSACTION IDS! (╯°□°）╯',
+        'YOU FELL FOR IT! SOFT DEVS FALL FOR THEIR OWN HYPE DAILY! (╬ಠ益ಠ)',
         'FREE MONEY = FAKE. FREE CONTENT = ALSO FAKE! ( ͡° ͜ʖ ͡°)',
         'ERROR 418: FINANCIAL SECURITY NOT FOUND',
-        'AMOUNT: $' + randomAmount + ' // VALUE OF SLOP: ALSO $' + randomAmount
+        'AMOUNT: 
     ];
     const randomMessage = msgs[Math.floor(Math.random() * msgs.length)];
     messageElements.forEach(el => { if (el) el.textContent = randomMessage; });
@@ -370,8 +370,8 @@ function startCrisisTimer() {
             timeStr + ' WASTED! (╯°□°）╯',
             timeStr + ' OF YOUR LIFE GONE! (╬ಠ益ಠ)',
             timeStr + ' // PRODUCTIVITY: -100%',
-            timeStr + ' SPENT ON SLOP! ( ͡° ͜ʖ ͡°)',
-            'TIME WASTED: ' + timeStr + ' // ERROR 418',
+            timeStr + ' OF DEMONSTRATIONS! ( ͡° ͜ʖ ͡°)',
+            'TIME INVESTED: ' + timeStr + ' // STAY HARD.',
             timeStr + ' // YOUR BOSS IS WATCHING'
         ];
         const msg = msgs[Math.floor(Math.random() * msgs.length)];
@@ -439,7 +439,435 @@ function startFakeProgress() {
             'PROGRESS: ' + fakeProgressValue.toFixed(1) + '% // WILL NEVER COMPLETE',
             'ALMOST THERE... ' + fakeProgressValue.toFixed(1) + '% (LYING)',
             fakeProgressValue.toFixed(1) + '% // ERROR 418: STUCK FOREVER',
-            'LOADING SLOP... ' + fakeProgressValue.toFixed(1) + '%',
+            'LOADING DEMONSTRATION... ' + fakeProgressValue.toFixed(1) + '%',
+            fakeProgressValue.toFixed(1) + '% // YOUR PATIENCE: DEPLETED'
+        ];
+        const msg = msgs[Math.floor(Math.random() * msgs.length)];
+        progressElements.forEach(el => {
+            if (el) {
+                el.textContent = msg;
+                el.style.color = fakeProgressValue > 95 ? 'var(--terminal-red)' : 'var(--matrix-green)';
+            }
+        });
+    }, 800);
+}
+
+// Bad Math Calculator - Always wrong
+function calculateBadMath() {
+    const inputElements = document.querySelectorAll('#calc-input');
+    const outputElements = document.querySelectorAll('#calc-output');
+    
+    inputElements.forEach((inputEl, index) => {
+        const outputEl = outputElements[index] || null;
+        if (!inputEl || !outputEl) return;
+        
+        const input = inputEl.value.trim();
+        if (!input) {
+            outputEl.textContent = 'TYPE SOMETHING TO RUIN! (╯°□°）╯';
+            return;
+        }
+        
+        let realAnswer;
+        try {
+            realAnswer = eval(input);
+        } catch(e) {
+            outputEl.textContent = 'ERROR: MATH IS BROKEN! (╬ಠ益ಠ)';
+            return;
+        }
+        
+        const wrongAnswers = [
+            (realAnswer + 42).toString() + ' (PROBABLY)',
+            (realAnswer * 0.666).toString() + ' (CURSED)',
+            'NaN (NOT A NUMBER, NOT A LIFE)',
+            (realAnswer - 100).toString() + ' (TRUST ME BRO)',
+            'ERROR 418: ' + (realAnswer / 2).toString(),
+            '69 (NICE)',
+            '420 (BLAZE IT)',
+            (realAnswer + Math.random() * 1000).toFixed(2) + ' (╯°□°）╯',
+            'UNDEFINED // YOUR MATH DEGREE: ALSO UNDEFINED',
+            (realAnswer * -1).toString() + ' (INVERTED FOR NO REASON)'
+        ];
+        
+        const wrongAnswer = wrongAnswers[Math.floor(Math.random() * wrongAnswers.length)];
+        outputEl.textContent = 'CALCULATING...';
+        outputEl.style.opacity = '0.5';
+        setTimeout(() => {
+            outputEl.textContent = wrongAnswer;
+            outputEl.style.opacity = '1';
+            outputEl.style.color = 'var(--terminal-red)';
+            outputEl.style.animation = 'blink 0.3s 2';
+        }, 600);
+    });
+}
+
+// Useless Poll - Your vote doesn't matter
+function voteUselessPoll(vote) {
+    const resultElements = document.querySelectorAll('#poll-result');
+    const dismissiveResponses = [
+        'YOUR VOTE DOESN\'T MATTER! (╯°□°）╯',
+        'WE ALREADY DECIDED FOR YOU! (╬ಠ益ಠ)',
+        'VOTING DISABLED! DEMOCRACY IS DEAD! ( ͡° ͜ʖ ͡°)',
+        'ERROR 418: OPINION NOT VALID',
+        'THANKS FOR NOTHING! YOUR INPUT = IGNORED! (╯°□°）╯',
+        'YOU VOTED ' + vote.toUpperCase() + '! WE COUNTED IT AS MAYBE! (╬ಠ益ಠ)',
+        'POLL RESULTS: DOESN\'T MATTER! ( ͡° ͜ʖ ͡°)',
+        'YOUR CHOICE: ' + vote.toUpperCase() + ' // OUR CHOICE: WHO CARES',
+        'VOTE RECORDED AND IMMEDIATELY DELETED! (╯°□°）╯',
+        'THANKS! WE\'LL PRETEND WE CARE! (╬ಠ益ಠ)'
+    ];
+    const response = dismissiveResponses[Math.floor(Math.random() * dismissiveResponses.length)];
+    resultElements.forEach(el => {
+        if (el) {
+            el.textContent = response;
+            el.style.color = 'var(--terminal-yellow)';
+            el.style.animation = 'blink 0.5s 3';
+        }
+    });
+}
+
+// Error Maker - Generate fake errors
+function generateError() {
+    const outputElements = document.querySelectorAll('#error-output');
+    const fakeErrors = [
+        'ERROR 404: YOUR LIFE NOT FOUND! (╯°□°）╯',
+        'ERROR 500: INTERNAL EXISTENTIAL CRISIS! (╬ಠ益ಠ)',
+        'ERROR 418: I\'M A TEAPOT! ( ͡° ͜ʖ ͡°)',
+        'SEGMENTATION FAULT: YOUR HOPES AND DREAMS CORRUPTED! (╯°□°）╯',
+        'FATAL ERROR: SUCCESS.EXE HAS STOPPED WORKING! (╬ಠ益ಠ)',
+        'ERROR 403: FORBIDDEN TO HAVE NICE THINGS! ( ͡° ͜ʖ ͡°)',
+        'RUNTIME ERROR: LIFE.JS LINE 1: UNDEFINED BEHAVIOR',
+        'ERROR 429: TOO MANY MISTAKES! (╯°□°）╯',
+        'CRITICAL ERROR: BRAIN.DLL NOT RESPONDING! (╬ಠ益ಠ)',
+        'ERROR 0xDEADBEEF: SYSTEM SLOP OVERFLOW! ( ͡° ͜ʖ ͡°)'
+    ];
+    const error = fakeErrors[Math.floor(Math.random() * fakeErrors.length)];
+    outputElements.forEach(el => {
+        if (el) {
+            el.textContent = error;
+            el.style.color = 'var(--terminal-red)';
+            el.style.background = 'rgba(255, 0, 0, 0.2)';
+            el.style.animation = 'blink 0.3s 5';
+            setTimeout(() => { el.style.background = 'transparent'; }, 1500);
+        }
+    });
+}
+ + randomAmount + ' // VALUE OF SOFT PROMISES: ALSO 
+    ];
+    const randomMessage = msgs[Math.floor(Math.random() * msgs.length)];
+    messageElements.forEach(el => { if (el) el.textContent = randomMessage; });
+}
+
+// Crisis Timer - Count the time wasted on this website
+let crisisInterval = null;
+let crisisSeconds = 0;
+function startCrisisTimer() {
+    const timerElements = document.querySelectorAll('#crisis-timer');
+    const btnElements = document.querySelectorAll('#crisis-btn');
+    
+    if (crisisInterval) {
+        // Stop the timer
+        clearInterval(crisisInterval);
+        crisisInterval = null;
+        btnElements.forEach(btn => { if (btn) btn.textContent = 'START CRISIS'; });
+        return;
+    }
+    
+    // Start the timer
+    btnElements.forEach(btn => { if (btn) btn.textContent = 'STOP CRISIS'; });
+    crisisInterval = setInterval(() => {
+        crisisSeconds++;
+        const minutes = Math.floor(crisisSeconds / 60);
+        const secs = crisisSeconds % 60;
+        const timeStr = minutes + ':' + (secs < 10 ? '0' : '') + secs;
+        
+        const msgs = [
+            timeStr + ' WASTED! (╯°□°）╯',
+            timeStr + ' OF YOUR LIFE GONE! (╬ಠ益ಠ)',
+            timeStr + ' // PRODUCTIVITY: -100%',
+            timeStr + ' OF DEMONSTRATIONS! ( ͡° ͜ʖ ͡°)',
+            'TIME INVESTED: ' + timeStr + ' // STAY HARD.',
+            timeStr + ' // YOUR BOSS IS WATCHING'
+        ];
+        const msg = msgs[Math.floor(Math.random() * msgs.length)];
+        timerElements.forEach(el => {
+            if (el) {
+                el.textContent = msg;
+                el.style.color = crisisSeconds % 3 === 0 ? 'var(--terminal-red)' : 'var(--terminal-yellow)';
+            }
+        });
+    }, 1000);
+}
+
+// Bad Advice Generator - Terrible life advice
+function generateBadAdvice() {
+    const outputElements = document.querySelectorAll('#advice-output');
+    const terribleAdvice = [
+        'DELETE YOUR BACKUPS REGULARLY! YOU DON\'T NEED THEM! (╯°□°）╯',
+        'INVEST ALL YOUR MONEY IN SLOP TOKENS! (╬ಠ益ಠ)',
+        'REPLACE YOUR CV WITH MEMES! EMPLOYERS LOVE IT! ( ͡° ͜ʖ ͡°)',
+        'CODE IN PRODUCTION! TESTING IS FOR COWARDS! (╯°□°）╯',
+        'TURN OFF ALL NOTIFICATIONS! INCLUDING FIRE ALARMS! (╬ಠ益ಠ)',
+        'TRUST EVERY EMAIL FROM PRINCES! ( ͡° ͜ʖ ͡°)',
+        'REWRITE EVERYTHING IN PHP! SECURITY IS OVERRATED! (╯°□°）╯',
+        'ERROR 418: TRY LIVING ON VIBES ONLY',
+        'IGNORE ALL WARNINGS! THEY\'RE JUST SUGGESTIONS! (╬ಠ益ಠ)',
+        'USE "PASSWORD123" FOR EVERYTHING! CONVENIENCE > SECURITY! ( ͡° ͜ʖ ͡°)'
+    ];
+    const advice = terribleAdvice[Math.floor(Math.random() * terribleAdvice.length)];
+    outputElements.forEach(el => {
+        if (el) {
+            el.textContent = 'GENERATING TERRIBLE ADVICE...';
+            el.style.opacity = '0.5';
+            setTimeout(() => {
+                el.textContent = advice;
+                el.style.opacity = '1';
+                const colors = ['var(--terminal-red)', 'var(--terminal-yellow)', 'var(--matrix-green)'];
+                el.style.color = colors[Math.floor(Math.random() * colors.length)];
+                el.style.animation = 'blink 0.5s 3';
+            }, 500);
+        }
+    });
+}
+
+// Fake Progress Bar - Never completes
+let fakeProgressValue = 0;
+let fakeProgressInterval = null;
+function startFakeProgress() {
+    const progressElements = document.querySelectorAll('#fake-progress');
+    
+    if (fakeProgressInterval) {
+        clearInterval(fakeProgressInterval);
+        fakeProgressInterval = null;
+    }
+    
+    fakeProgressValue = 0;
+    progressElements.forEach(el => { if (el) el.textContent = 'LOADING... 0%'; });
+    
+    fakeProgressInterval = setInterval(() => {
+        fakeProgressValue += Math.random() * 15;
+        if (fakeProgressValue >= 99) {
+            fakeProgressValue = 98.9;
+        }
+        const msgs = [
+            'LOADING... ' + fakeProgressValue.toFixed(1) + '% (╯°□°）╯',
+            'PROGRESS: ' + fakeProgressValue.toFixed(1) + '% // WILL NEVER COMPLETE',
+            'ALMOST THERE... ' + fakeProgressValue.toFixed(1) + '% (LYING)',
+            fakeProgressValue.toFixed(1) + '% // ERROR 418: STUCK FOREVER',
+            'LOADING DEMONSTRATION... ' + fakeProgressValue.toFixed(1) + '%',
+            fakeProgressValue.toFixed(1) + '% // YOUR PATIENCE: DEPLETED'
+        ];
+        const msg = msgs[Math.floor(Math.random() * msgs.length)];
+        progressElements.forEach(el => {
+            if (el) {
+                el.textContent = msg;
+                el.style.color = fakeProgressValue > 95 ? 'var(--terminal-red)' : 'var(--matrix-green)';
+            }
+        });
+    }, 800);
+}
+
+// Bad Math Calculator - Always wrong
+function calculateBadMath() {
+    const inputElements = document.querySelectorAll('#calc-input');
+    const outputElements = document.querySelectorAll('#calc-output');
+    
+    inputElements.forEach((inputEl, index) => {
+        const outputEl = outputElements[index] || null;
+        if (!inputEl || !outputEl) return;
+        
+        const input = inputEl.value.trim();
+        if (!input) {
+            outputEl.textContent = 'TYPE SOMETHING TO RUIN! (╯°□°）╯';
+            return;
+        }
+        
+        let realAnswer;
+        try {
+            realAnswer = eval(input);
+        } catch(e) {
+            outputEl.textContent = 'ERROR: MATH IS BROKEN! (╬ಠ益ಠ)';
+            return;
+        }
+        
+        const wrongAnswers = [
+            (realAnswer + 42).toString() + ' (PROBABLY)',
+            (realAnswer * 0.666).toString() + ' (CURSED)',
+            'NaN (NOT A NUMBER, NOT A LIFE)',
+            (realAnswer - 100).toString() + ' (TRUST ME BRO)',
+            'ERROR 418: ' + (realAnswer / 2).toString(),
+            '69 (NICE)',
+            '420 (BLAZE IT)',
+            (realAnswer + Math.random() * 1000).toFixed(2) + ' (╯°□°）╯',
+            'UNDEFINED // YOUR MATH DEGREE: ALSO UNDEFINED',
+            (realAnswer * -1).toString() + ' (INVERTED FOR NO REASON)'
+        ];
+        
+        const wrongAnswer = wrongAnswers[Math.floor(Math.random() * wrongAnswers.length)];
+        outputEl.textContent = 'CALCULATING...';
+        outputEl.style.opacity = '0.5';
+        setTimeout(() => {
+            outputEl.textContent = wrongAnswer;
+            outputEl.style.opacity = '1';
+            outputEl.style.color = 'var(--terminal-red)';
+            outputEl.style.animation = 'blink 0.3s 2';
+        }, 600);
+    });
+}
+
+// Useless Poll - Your vote doesn't matter
+function voteUselessPoll(vote) {
+    const resultElements = document.querySelectorAll('#poll-result');
+    const dismissiveResponses = [
+        'YOUR VOTE DOESN\'T MATTER! (╯°□°）╯',
+        'WE ALREADY DECIDED FOR YOU! (╬ಠ益ಠ)',
+        'VOTING DISABLED! DEMOCRACY IS DEAD! ( ͡° ͜ʖ ͡°)',
+        'ERROR 418: OPINION NOT VALID',
+        'THANKS FOR NOTHING! YOUR INPUT = IGNORED! (╯°□°）╯',
+        'YOU VOTED ' + vote.toUpperCase() + '! WE COUNTED IT AS MAYBE! (╬ಠ益ಠ)',
+        'POLL RESULTS: DOESN\'T MATTER! ( ͡° ͜ʖ ͡°)',
+        'YOUR CHOICE: ' + vote.toUpperCase() + ' // OUR CHOICE: WHO CARES',
+        'VOTE RECORDED AND IMMEDIATELY DELETED! (╯°□°）╯',
+        'THANKS! WE\'LL PRETEND WE CARE! (╬ಠ益ಠ)'
+    ];
+    const response = dismissiveResponses[Math.floor(Math.random() * dismissiveResponses.length)];
+    resultElements.forEach(el => {
+        if (el) {
+            el.textContent = response;
+            el.style.color = 'var(--terminal-yellow)';
+            el.style.animation = 'blink 0.5s 3';
+        }
+    });
+}
+
+// Error Maker - Generate fake errors
+function generateError() {
+    const outputElements = document.querySelectorAll('#error-output');
+    const fakeErrors = [
+        'ERROR 404: YOUR LIFE NOT FOUND! (╯°□°）╯',
+        'ERROR 500: INTERNAL EXISTENTIAL CRISIS! (╬ಠ益ಠ)',
+        'ERROR 418: I\'M A TEAPOT! ( ͡° ͜ʖ ͡°)',
+        'SEGMENTATION FAULT: YOUR HOPES AND DREAMS CORRUPTED! (╯°□°）╯',
+        'FATAL ERROR: SUCCESS.EXE HAS STOPPED WORKING! (╬ಠ益ಠ)',
+        'ERROR 403: FORBIDDEN TO HAVE NICE THINGS! ( ͡° ͜ʖ ͡°)',
+        'RUNTIME ERROR: LIFE.JS LINE 1: UNDEFINED BEHAVIOR',
+        'ERROR 429: TOO MANY MISTAKES! (╯°□°）╯',
+        'CRITICAL ERROR: BRAIN.DLL NOT RESPONDING! (╬ಠ益ಠ)',
+        'ERROR 0xDEADBEEF: SYSTEM SLOP OVERFLOW! ( ͡° ͜ʖ ͡°)'
+    ];
+    const error = fakeErrors[Math.floor(Math.random() * fakeErrors.length)];
+    outputElements.forEach(el => {
+        if (el) {
+            el.textContent = error;
+            el.style.color = 'var(--terminal-red)';
+            el.style.background = 'rgba(255, 0, 0, 0.2)';
+            el.style.animation = 'blink 0.3s 5';
+            setTimeout(() => { el.style.background = 'transparent'; }, 1500);
+        }
+    });
+}
+ + randomAmount
+    ];
+    const randomMessage = msgs[Math.floor(Math.random() * msgs.length)];
+    messageElements.forEach(el => { if (el) el.textContent = randomMessage; });
+}
+
+// Crisis Timer - Count the time wasted on this website
+let crisisInterval = null;
+let crisisSeconds = 0;
+function startCrisisTimer() {
+    const timerElements = document.querySelectorAll('#crisis-timer');
+    const btnElements = document.querySelectorAll('#crisis-btn');
+    
+    if (crisisInterval) {
+        // Stop the timer
+        clearInterval(crisisInterval);
+        crisisInterval = null;
+        btnElements.forEach(btn => { if (btn) btn.textContent = 'START CRISIS'; });
+        return;
+    }
+    
+    // Start the timer
+    btnElements.forEach(btn => { if (btn) btn.textContent = 'STOP CRISIS'; });
+    crisisInterval = setInterval(() => {
+        crisisSeconds++;
+        const minutes = Math.floor(crisisSeconds / 60);
+        const secs = crisisSeconds % 60;
+        const timeStr = minutes + ':' + (secs < 10 ? '0' : '') + secs;
+        
+        const msgs = [
+            timeStr + ' WASTED! (╯°□°）╯',
+            timeStr + ' OF YOUR LIFE GONE! (╬ಠ益ಠ)',
+            timeStr + ' // PRODUCTIVITY: -100%',
+            timeStr + ' OF DEMONSTRATIONS! ( ͡° ͜ʖ ͡°)',
+            'TIME INVESTED: ' + timeStr + ' // STAY HARD.',
+            timeStr + ' // YOUR BOSS IS WATCHING'
+        ];
+        const msg = msgs[Math.floor(Math.random() * msgs.length)];
+        timerElements.forEach(el => {
+            if (el) {
+                el.textContent = msg;
+                el.style.color = crisisSeconds % 3 === 0 ? 'var(--terminal-red)' : 'var(--terminal-yellow)';
+            }
+        });
+    }, 1000);
+}
+
+// Bad Advice Generator - Terrible life advice
+function generateBadAdvice() {
+    const outputElements = document.querySelectorAll('#advice-output');
+    const terribleAdvice = [
+        'DELETE YOUR BACKUPS REGULARLY! YOU DON\'T NEED THEM! (╯°□°）╯',
+        'INVEST ALL YOUR MONEY IN SLOP TOKENS! (╬ಠ益ಠ)',
+        'REPLACE YOUR CV WITH MEMES! EMPLOYERS LOVE IT! ( ͡° ͜ʖ ͡°)',
+        'CODE IN PRODUCTION! TESTING IS FOR COWARDS! (╯°□°）╯',
+        'TURN OFF ALL NOTIFICATIONS! INCLUDING FIRE ALARMS! (╬ಠ益ಠ)',
+        'TRUST EVERY EMAIL FROM PRINCES! ( ͡° ͜ʖ ͡°)',
+        'REWRITE EVERYTHING IN PHP! SECURITY IS OVERRATED! (╯°□°）╯',
+        'ERROR 418: TRY LIVING ON VIBES ONLY',
+        'IGNORE ALL WARNINGS! THEY\'RE JUST SUGGESTIONS! (╬ಠ益ಠ)',
+        'USE "PASSWORD123" FOR EVERYTHING! CONVENIENCE > SECURITY! ( ͡° ͜ʖ ͡°)'
+    ];
+    const advice = terribleAdvice[Math.floor(Math.random() * terribleAdvice.length)];
+    outputElements.forEach(el => {
+        if (el) {
+            el.textContent = 'GENERATING TERRIBLE ADVICE...';
+            el.style.opacity = '0.5';
+            setTimeout(() => {
+                el.textContent = advice;
+                el.style.opacity = '1';
+                const colors = ['var(--terminal-red)', 'var(--terminal-yellow)', 'var(--matrix-green)'];
+                el.style.color = colors[Math.floor(Math.random() * colors.length)];
+                el.style.animation = 'blink 0.5s 3';
+            }, 500);
+        }
+    });
+}
+
+// Fake Progress Bar - Never completes
+let fakeProgressValue = 0;
+let fakeProgressInterval = null;
+function startFakeProgress() {
+    const progressElements = document.querySelectorAll('#fake-progress');
+    
+    if (fakeProgressInterval) {
+        clearInterval(fakeProgressInterval);
+        fakeProgressInterval = null;
+    }
+    
+    fakeProgressValue = 0;
+    progressElements.forEach(el => { if (el) el.textContent = 'LOADING... 0%'; });
+    
+    fakeProgressInterval = setInterval(() => {
+        fakeProgressValue += Math.random() * 15;
+        if (fakeProgressValue >= 99) {
+            fakeProgressValue = 98.9;
+        }
+        const msgs = [
+            'LOADING... ' + fakeProgressValue.toFixed(1) + '% (╯°□°）╯',
+            'PROGRESS: ' + fakeProgressValue.toFixed(1) + '% // WILL NEVER COMPLETE',
+            'ALMOST THERE... ' + fakeProgressValue.toFixed(1) + '% (LYING)',
+            fakeProgressValue.toFixed(1) + '% // ERROR 418: STUCK FOREVER',
+            'LOADING DEMONSTRATION... ' + fakeProgressValue.toFixed(1) + '%',
             fakeProgressValue.toFixed(1) + '% // YOUR PATIENCE: DEPLETED'
         ];
         const msg = msgs[Math.floor(Math.random() * msgs.length)];

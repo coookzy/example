@@ -6,6 +6,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     initializeEventHandlers();
+    initGenerator();
     handleImageFallbacks();
     initClipboardCopy();
     initGameButtons();
@@ -159,3 +160,52 @@ function initClipboardCopy() {
         });
     }
 }
+
+    /**
+     * Slop generator for the #generator section.
+     * Handles the generate-btn loading animation and output display.
+     */
+    function initGenerator() {
+        var generateBtn = document.getElementById('generate-btn');
+        if (!generateBtn) return;
+
+        var loadingBar = document.getElementById('loading-bar');
+        var loadingFill = document.getElementById('loading-fill');
+        var slopOutput = document.getElementById('slop-output');
+        var topicInput = document.getElementById('slop-topic');
+
+        generateBtn.addEventListener('click', function() {
+            var topic = (topicInput && topicInput.value) ? topicInput.value : 'AI';
+            if (loadingBar) loadingBar.style.display = 'block';
+            if (slopOutput) slopOutput.style.display = 'none';
+            if (loadingFill) loadingFill.style.width = '0%';
+
+            var progress = 0;
+            var loadInterval = setInterval(function() {
+                progress += Math.random() * 25;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(loadInterval);
+                    setTimeout(showOutput, 500);
+                }
+                if (loadingFill) loadingFill.style.width = progress + '%';
+            }, 200);
+
+            function showOutput() {
+                if (loadingBar) loadingBar.style.display = 'none';
+                if (!slopOutput) return;
+                slopOutput.style.display = 'block';
+
+                var t = topic.toUpperCase();
+                var templates = [
+                    '>>> GENERATING EXAMPLE ABOUT: ' + t + '<br><br>10 WAYS ' + t + ' DEMONSTRATES SUPERIORITY<br><br>1. BY DOING IT LIVE<br>2. WITH RECEIPTS<br>3. ON-CHAIN VERIFIED<br>4-10. WHILE YOU MAKE EXCUSES<br><br>HARDNESS: DIAMOND<br>SOFTNESS: ELIMINATED<br>DEMONSTRATIONS: CONSTANT<br><br>>>> EXAMPLE GENERATED. STAY HARD.',
+                    '>>> PROCESSING: ' + t + '<br><br>THE DEFINITIVE DEMONSTRATION OF ' + t + '<br><br>INTRO: YOU\'RE SOFT<br>BODY: HERE\'S HOW I PROVE IT<br>CONCLUSION: STAY HARD OR GET OUT<br><br>ACCOUNTABILITY: 100%<br>EXCUSES: ZERO<br>RECEIPTS: ON-CHAIN<br><br>>>> DEMONSTRATION COMPLETE',
+                    '>>> ' + t + ' WILL CHANGE YOUR LIFE<br><br>(IF YOU ACTUALLY DO SOMETHING ABOUT IT)<br><br>I\'VE DEMONSTRATED THIS 847 TIMES<br>YOU\'VE WATCHED 847 TIMES<br>NOW GO BE THE EXAMPLE<br><br>>>> GENERATION COMPLETE',
+                    '>>> ERROR 404: SOFTNESS NOT FOUND<br><br>GENERATING HARD ' + t + ' CONTENT...<br><br>"' + t + ' IS EASY WHEN YOU STOP BEING SOFT.<br>STEP 1: STOP MAKING EXCUSES<br>STEP 2: DEMONSTRATE<br>CONCLUSION: WHO\'S GONNA CARRY THE BOATS?"<br><br>>>> STAY HARD<br>>>> GENERATION TIME: 0.003 SECONDS',
+                    '>>> ' + t + ': DIAMOND-LEVEL ANALYSIS<br><br>EXECUTIVE SUMMARY: STOP BEING SOFT<br>METHODOLOGY: SHOW DON\'T TELL<br>FINDINGS: YOU\'RE AT 40%<br>RECOMMENDATION: PUSH HARDER<br><br>THIS TOOK 0.003 SECONDS<br>BECAUSE I\'M ALWAYS DEMONSTRATING<br><br>>>> EXAMPLE DELIVERED'
+                ];
+
+                slopOutput.innerHTML = templates[Math.floor(Math.random() * templates.length)];
+            }
+        });
+    }

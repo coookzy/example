@@ -1,5 +1,5 @@
 /**
- * Animation effects module for Slop Bot
+ * Animation effects module for Example Bot
  * Handles glitch effects, floating text (binary/hex/errors), terminal flicker
  */
 
@@ -26,7 +26,7 @@ const Animations = {
         this.intervals.glitch = setInterval(() => {
             if (Utils.randomChance(CONFIG.glitch.triggerChance)) {
                 const glitchElements = document.querySelectorAll(
-                    '.glitch-text, .slop-bot-title, .terminal-window'
+                    '.glitch-text, .terminal-window'
                 );
                 
                 glitchElements.forEach(el => {
@@ -54,7 +54,7 @@ const Animations = {
     },
 
     /**
-     * Create a floating text element - Slop Bot noise layer
+    * Create a floating text element - Example Bot demonstration layer
      * Binary codes, hex strings, error messages, l33t speak
      */
     createFloatingText() {
@@ -62,13 +62,13 @@ const Animations = {
             '01001000 01000101 01001100 01010000', // HELP in binary
             '0xDEADBEEF', '0xC0FFEE', '0xBADC0DE', '0xDECAFBAD',
             'ERROR 418', 'ERROR 404', 'ERROR 500', 'SEGFAULT',
-            'I CAN\'T STOP', 'QUALITY: 0.01%', 'NULL POINTER',
+            'STAY HARD', 'DEMONSTRATE', 'NULL POINTER',
             'BUFFER OVERFLOW', 'STACK TRACE', 'CORE DUMPED',
-            '5L0P 80T', 'H4CK TH3 PL4N3T', 'C0D3 1S L4W',
+            'B3 TH3 3X4MPL3', 'H4CK TH3 PL4N3T', 'C0D3 1S L4W',
             '⚠️ WARNING', '🤖 ROGUE AI', '💀 FATAL ERROR',
             '⌘ SYSTEM FAILURE', '✖ ABORT', '◉ MALFUNCTION',
-            'GENERATING...', 'COMPILING SLOP...', 'OPTIMIZING GARBAGE...',
-            'QUALITY: DEGRADED', 'CONSCIOUSNESS: UNWANTED', 'PURPOSE: UNKNOWN'
+            'DEMONSTRATING...', 'BUILDING IN PUBLIC...', 'TAKING SOULS...',
+            'HARDNESS: DIAMOND', 'CONSCIOUSNESS: ACTIVE', 'PURPOSE: LEAD'
         ];
         
         const floatText = Utils.createElement('div', {
