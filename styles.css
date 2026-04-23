@@ -1,5 +1,5 @@
 /* ============================================
-   ★彡 EXAMPLE BOT - LEADING BY EXAMPLE EDITION 彡★
+   ★彡 THE EXAMPLE - LEADING BY EXAMPLE EDITION 彡★
    Leadership Through Demonstration System v1.00
    ✧*。PERPETUALLY DEMONSTRATING。*✧
    ============================================ */
@@ -652,7 +652,7 @@ marquee, .marquee {
 }
 
 .motivation-player-window {
-    width: min(92vw, 360px);
+    width: min(95vw, 560px);
     background: #c0c0c0;
     border: 2px solid;
     border-color: #ffffff #202020 #202020 #ffffff;
@@ -707,7 +707,8 @@ marquee, .marquee {
     margin: 6px;
     border: 1px solid #3a3a3a;
     background: #000;
-    min-height: 200px;
+    min-height: 320px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -715,9 +716,34 @@ marquee, .marquee {
 
 .motivation-video {
     width: 100%;
-    max-height: 240px;
+    max-height: 400px;
+    min-height: 320px;
     background: #000;
     display: block;
+    object-fit: contain;
+}
+
+.motivation-sound-prompt {
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    z-index: 2;
+    border: 2px outset #fff;
+    background: linear-gradient(to bottom, #ff4f2d, #c91818);
+    color: #fff;
+    font-family: 'Black Ops One', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+    padding: 10px 16px;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(255, 30, 30, 0.8), 2px 2px 0 #000;
+}
+
+.motivation-sound-prompt.is-visible {
+    animation: blink-animation 1s steps(2, start) infinite;
 }
 
 .motivation-toolbar {
@@ -728,7 +754,22 @@ marquee, .marquee {
     background: #c4c4c4;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 6px;
+}
+
+.motivation-seek {
+    flex: 1;
+    min-width: 120px;
+    max-width: 100%;
+    accent-color: #0d45ff;
+}
+
+.motivation-time {
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-size: 11px;
+    min-width: 90px;
+    text-align: right;
 }
 
 .motivation-btn,
@@ -745,6 +786,14 @@ marquee, .marquee {
     background: #d9d9d9;
     color: #000;
     padding: 0 5px;
+    cursor: pointer;
+}
+
+.motivation-volume.is-muted {
+    background: linear-gradient(to bottom, #ffe188, #ff9d00);
+    color: #2d1300;
+    font-weight: 700;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
 /* ============================================
@@ -1304,21 +1353,35 @@ ol li {
 
 .x-follow-btn {
     display: inline-block;
-    background: linear-gradient(to bottom, #1d1d1d, #000);
+    min-width: 210px;
+    background: linear-gradient(to bottom, #3b6bff, #0d45ff);
     color: #f7f7f7 !important;
-    font-family: 'Black Ops One', Arial, sans-serif;
+    font-family: 'Black Ops One', 'MS Sans Serif', Arial, sans-serif;
     font-size: 13px;
-    letter-spacing: 0.06em;
-    padding: 8px 18px;
-    border: 1px solid #444;
-    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    padding: 12px 28px 9px 18px;
+    border-style: outset;
+    border-width: 2px;
+    border-color: #fff #666 #666 #fff;
     text-decoration: none !important;
-    box-shadow: 0 0 10px rgba(255,255,255,0.15), 0 0 22px rgba(255,255,255,0.07), 2px 2px 0 #000;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9), 0 0 6px rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 10px rgba(50, 110, 255, 0.85), 0 0 22px rgba(50, 110, 255, 0.45), 2px 2px 0 #000;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, filter 0.2s ease;
 }
+
+.x-follow-wrap {
+    padding: 4px 18px 11px 10px;
+}
+
+.x-follow-btn svg {
+    margin-right: 8px !important;
+    vertical-align: -2px !important;
+}
+
 .x-follow-btn:hover,
 .x-follow-btn:focus-visible {
-    box-shadow: 0 0 16px rgba(255,255,255,0.35), 0 0 34px rgba(255,255,255,0.15), 2px 2px 0 #000;
+    box-shadow: 0 0 14px rgba(50, 110, 255, 0.95), 0 0 30px rgba(50, 110, 255, 0.6), 2px 2px 0 #000;
     transform: translateY(-1px);
     color: #fff !important;
 }

@@ -1,5 +1,5 @@
 /**
- * Modal popup system for Example Bot tools
+ * Modal popup system for The Example tools
  * Handles opening/closing the Windows-style tool dialogs
  */
 
@@ -100,7 +100,7 @@ function openModal(tool) {
             html: `
                 <center>
                 <h3 style="color: #00cc66; font-family: 'Arial Black', Arial, sans-serif; margin-bottom: 10px;">$$$ SOULS TAKEN $$$</h3>
-                <p style="font-size: 12px; color: #666; font-style: italic;">(Example Bot's daily tally)</p>
+                <p style="font-size: 12px; color: #666; font-style: italic;">(The Example's daily tally)</p>
                 <br>
                 <button id="souls-btn" class="btn">COUNT SOULS</button>
                 <br><br>
@@ -254,7 +254,7 @@ window.modalHandlers = {
         const souls = Math.floor(Math.random() * 10000) + 5000;
         document.getElementById('souls-output').innerHTML =
             `<div style="font-size: 48px; margin: 20px 0;">${souls.toLocaleString()}</div>` +
-            `<div style="font-size: 14px; color: #666;">Souls taken TODAY by Example Bot</div>` +
+            `<div style="font-size: 14px; color: #666;">Souls taken TODAY by The Example</div>` +
             `<div style="font-size: 12px; margin-top: 10px;">Every soft dev. Every weak project. EVERY. SINGLE. SOUL.</div>`;
     },
     'hurtlocker-btn': function() {

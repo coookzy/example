@@ -1,5 +1,5 @@
 /**
- * Main initialization file for Example Bot
+ * Main initialization file for The Example
  * Initializes animations and inline event handlers
  */
 

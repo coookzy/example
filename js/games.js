@@ -38,7 +38,7 @@ function uselessCalculate() {
     }
 }
 
-// Example Bot meme generator
+// The Example meme generator
 function generateMeme() {
     const outputEls = document.querySelectorAll('#meme-output');
     if (outputEls.length === 0) return;
@@ -70,7 +70,7 @@ function generateMeme() {
     });
 }
 
-// Do Nothing button - Example Bot style
+// Do Nothing button - The Example style
 function doNothing() {
     const messageEls = document.querySelectorAll('#nothing-message');
     const messages = [
@@ -213,7 +213,7 @@ function generateRandomNumber() {
     messageElements.forEach(el => { if (el) el.textContent = randomMessage; });
 }
 
-// Example Bot password generator
+// The Example password generator
 function generatePassword() {
     const passwordElements = document.querySelectorAll('#password-output');
     passwordElements.forEach(el => {
@@ -278,7 +278,7 @@ function detectKOL() {
     });
 }
 
-// Translate to Example Bot energy - maximize hardness
+// Translate to The Example energy - maximize hardness
 function translateToGoblin() {
     const inputElements = document.querySelectorAll('#goblin-input');
     const outputElements = document.querySelectorAll('#goblin-output');

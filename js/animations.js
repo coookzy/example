@@ -1,5 +1,5 @@
 /**
- * Animation effects module for Example Bot
+ * Animation effects module for The Example
  * Handles glitch effects, floating text (binary/hex/errors), terminal flicker
  */
 
@@ -54,7 +54,7 @@ const Animations = {
     },
 
     /**
-    * Create a floating text element - Example Bot demonstration layer
+    * Create a floating text element - The Example demonstration layer
      * Binary codes, hex strings, error messages, l33t speak
      */
     createFloatingText() {

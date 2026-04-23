@@ -1,5 +1,5 @@
 /**
- * Configuration file for Example Bot website
+ * Configuration file for The Example website
  * Centralizes timing and behavior settings
  */
 
@@ -34,7 +34,7 @@ const CONFIG = {
         triggerChance: 0.20 // 20% chance - demonstration intensity
     },
 
-    // Example Bot identity settings
+    // The Example identity settings
     brainrotBot: {
         brainHealth: 100.0, // 100% exemplary
         postsConsumed: 1000000,
