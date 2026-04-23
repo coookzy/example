@@ -633,6 +633,121 @@ marquee, .marquee {
 }
 
 /* ============================================
+   MOTIVATION POPUP - Retro Media Player
+   ============================================ */
+
+.motivation-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.78);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 12000;
+    padding: 16px;
+}
+
+.motivation-popup-overlay.is-open {
+    display: flex;
+}
+
+.motivation-player-window {
+    width: min(92vw, 360px);
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #202020 #202020 #ffffff;
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.55);
+    color: #000;
+}
+
+.motivation-titlebar {
+    background: linear-gradient(180deg, #0b2b9e 0%, #001e7a 100%);
+    color: #ffffff;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.motivation-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 8px;
+}
+
+.motivation-close {
+    width: 18px;
+    height: 16px;
+    line-height: 12px;
+    font-size: 10px;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-weight: 700;
+    border: 1px solid;
+    border-color: #ffffff #202020 #202020 #ffffff;
+    background: #c0c0c0;
+    color: #000;
+    cursor: pointer;
+    padding: 0;
+}
+
+.motivation-menubar {
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    padding: 4px 6px;
+    background: #d6d6d6;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+.motivation-screen {
+    margin: 6px;
+    border: 1px solid #3a3a3a;
+    background: #000;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.motivation-video {
+    width: 100%;
+    max-height: 240px;
+    background: #000;
+    display: block;
+}
+
+.motivation-toolbar {
+    margin: 6px;
+    padding: 6px;
+    border: 1px solid;
+    border-color: #f0f0f0 #8f8f8f #8f8f8f #f0f0f0;
+    background: #c4c4c4;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.motivation-btn,
+.motivation-volume {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 20px;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-size: 10px;
+    border: 1px solid;
+    border-color: #ffffff #707070 #707070 #ffffff;
+    background: #d9d9d9;
+    color: #000;
+    padding: 0 5px;
+}
+
+/* ============================================
    FORMS - Retro Style
    ============================================ */
 
