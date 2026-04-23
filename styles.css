@@ -742,6 +742,10 @@ marquee, .marquee {
     box-shadow: 0 0 12px rgba(255, 30, 30, 0.8), 2px 2px 0 #000;
 }
 
+.motivation-sound-prompt:active {
+    transform: translateX(-50%);
+}
+
 .motivation-sound-prompt.is-visible {
     animation: blink-animation 1s steps(2, start) infinite;
 }
@@ -1707,290 +1711,39 @@ ol li {
 }
 
 /* ============================================
-   RESPONSIVE DESIGN - Mobile First
+   RESPONSIVE - Basic
    ============================================ */
 
-/* TABLET BREAKPOINT (768px and below) */
 @media (max-width: 768px) {
     html {
         font-size: 14px;
     }
     
-    body {
-        font-size: 13px;
-    }
-    
-    /* Layout: Hide sidebar on tablet and below */
-    .page-shell {
-        flex-direction: column;
-        padding-top: 34px;
-    }
-    
-    .left-sidebar {
-        display: none !important;
-    }
-    
-    .main-content-wrap {
-        flex: 1;
-        width: 100%;
-    }
-    
-    /* Main content area */
-    main {
-        width: 100%;
-    }
-    
-    .main-layout-table {
-        width: 100% !important;
-    }
-    
-    .main-layout-col {
-        width: 100% !important;
-        display: block;
-    }
-    
-    /* Typography scaling */
     h1 {
-        font-size: 2.5rem;
-        margin: 15px 0;
+        font-size: 2rem;
     }
     
     h2 {
-        font-size: 1.8rem;
-        margin: 12px 0;
+        font-size: 1.5rem;
     }
     
-    h3 {
-        font-size: 1.3rem;
-    }
-    
-    h4 {
-        font-size: 1.1rem;
-    }
-    
-    /* About section table: stack columns */
-    .about-table {
-        width: 100% !important;
-    }
-    
-    .about-col-left,
-    .about-col-right {
-        display: block;
-        width: 100% !important;
-    }
-    
-    .about-col-left {
-        margin-bottom: 15px;
-    }
-    
-    /* Marquee text scaling */
-    marquee,
-    .marquee {
-        font-size: 16px;
-        padding: 8px;
-    }
-    
-    .top-banner-marquee {
-        font-size: 12px;
-    }
-    
-    /* Terminal windows responsive */
-    .terminal-window {
-        width: 100%;
-        max-width: 100%;
-        margin: 10px 0;
-        overflow-x: auto;
-    }
-    
-    .terminal-body {
-        font-size: 12px;
-        overflow-x: auto;
-    }
-    
-    /* Video player popup: mobile scaling */
-    .motivation-player {
-        width: min(100vw - 20px, 480px) !important;
-        max-height: 70vh !important;
-    }
-    
-    .motivation-video {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    /* Grid systems collapse to single column */
     .grid-2,
     .grid-3,
     .grid-4 {
         grid-template-columns: 1fr;
     }
     
-    /* Content panels and boxes */
-    .content-panel {
-        padding: 15px;
-    }
-    
-    .window {
-        margin: 15px 0;
-    }
-    
-    .window-titlebar {
-        font-size: 14px;
-    }
-    
-    /* Buttons and inputs */
-    button,
-    .button,
-    input[type="button"],
-    input[type="submit"],
-    .btn {
-        min-height: 44px;
-        padding: 10px 16px;
-        font-size: 14px;
-    }
-    
-    /* Intro section */
-    .intro-box {
-        padding: 15px;
-    }
-    
-    .intro-heading {
-        font-size: 20px;
-    }
-    
-    .intro-paragraph {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-    
-    /* Tables on mobile */
-    table {
-        font-size: 12px;
-    }
-    
-    td, th {
-        padding: 6px;
-    }
-    
-    /* X follow button sizing */
-    .x-follow-btn {
-        display: inline-block;
-        min-height: 44px;
-        padding: 10px 16px;
-    }
-}
-
-/* MOBILE BREAKPOINT (480px and below) */
-@media (max-width: 480px) {
-    html {
-        font-size: 12px;
-    }
-    
-    body {
-        font-size: 12px;
-    }
-    
-    .left-sidebar {
-        padding: 10px;
-    }
-    
-    /* Typography for small screens */
-    h1 {
-        font-size: 1.8rem;
-        margin: 10px 0;
-    }
-    
-    h2 {
-        font-size: 1.4rem;
-    }
-    
-    h3 {
-        font-size: 1.1rem;
-    }
-    
-    /* Stacked navigation */
-    .sidebar-nav-btn,
-    .sidebar-nav-disabled {
-        display: block;
-        width: 100%;
-        margin: 5px 0;
-    }
-    
-    .sidebar-nav {
-        flex-direction: column;
-        gap: 0;
-    }
-    
-    /* Sidebar images */
-    .sidebar-logo {
-        width: 100px;
-    }
-    
-    .sidebar-mascot {
-        width: 80px;
-    }
-    
-    /* Main layout */
-    .main-content-wrap {
+    .container {
         padding: 0 10px;
     }
     
-    /* Terminal windows */
-    .terminal-window {
-        width: 100%;
-        margin: 8px 0;
+    /* Sidebar stacks below content on mobile */
+    main > div {
+        flex-direction: column !important;
     }
     
-    .terminal-body {
-        font-size: 11px;
-    }
-    
-    /* Video player: very compact on small phones */
-    .motivation-player {
-        width: 100vw !important;
-        margin-left: calc(-50vw + 50%) !important;
-        max-height: 50vh !important;
-    }
-    
-    /* Text scaling */
-    p, span, li, td {
-        font-size: 12px;
-    }
-    
-    .intro-paragraph {
-        font-size: 13px;
-        line-height: 1.6;
-    }
-    
-    /* Spacing reduction */
-    .intro-box {
-        padding: 10px;
-        margin-top: 15px;
-    }
-    
-    .window {
-        margin: 10px 0;
-    }
-    
-    /* Table content */
-    table {
-        font-size: 11px;
-        word-break: break-word;
-    }
-    
-    td, th {
-        padding: 4px;
-    }
-    
-    /* Buttons and controls */
-    button,
-    .button,
-    input[type="button"],
-    input[type="submit"],
-    .btn {
-        min-height: 40px;
-        padding: 8px 12px;
-        font-size: 12px;
+    aside {
+        width: 100% !important;
     }
 }
 

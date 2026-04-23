@@ -1,6 +1,6 @@
 /**
  * Motivation popup video player
- * Displays a retro-styled media player 2 seconds after page load.
+ * Displays a retro-styled media player as soon as the page loads.
  */
 (function () {
     const POPUP_ID = 'motivation-popup-overlay';
@@ -209,6 +209,7 @@
         const video = overlay.querySelector('.motivation-video');
         const volumeBtn = overlay.querySelector('.motivation-volume');
         const playBtn = overlay.querySelector('.motivation-play');
+        const soundPrompt = overlay.querySelector('.motivation-sound-prompt');
 
         if (video) {
             video.muted = false;
@@ -259,7 +260,7 @@
 
         window.setTimeout(() => {
             showPopup(popup);
-        }, 2000);
+        }, 1000);
     }
 
     document.addEventListener('DOMContentLoaded', initMotivationPopup);
