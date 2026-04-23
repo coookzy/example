@@ -1720,22 +1720,14 @@ ol li {
         font-size: 13px;
     }
     
-    /* Layout: Stack sidebar and content vertically */
+    /* Layout: Hide sidebar on tablet and below */
     .page-shell {
         flex-direction: column;
         padding-top: 34px;
     }
     
     .left-sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: auto;
-        padding: 15px;
-        overflow-y: visible;
-        flex-shrink: 1;
-        margin-bottom: 15px;
-        border-bottom: 2px solid rgba(255, 184, 51, 0.25);
+        display: none;
     }
     
     .main-content-wrap {
@@ -1776,41 +1768,31 @@ ol li {
         font-size: 1.1rem;
     }
     
-    /* Navigation buttons: touch-friendly sizing */
+    /* Navigation buttons: not shown on mobile */
     .sidebar-nav-btn,
     .sidebar-nav-disabled {
-        display: inline-block;
-        min-width: 48px;
-        min-height: 48px;
-        padding: 12px 10px;
-        margin: 5px 5px;
-        font-size: 11px;
-        flex: 1 1 auto;
+        display: none;
     }
     
     .sidebar-nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 15px;
-        gap: 5px;
+        display: none;
     }
     
     /* Sidebar images and content */
     .sidebar-logo {
-        width: 150px;
+        display: none;
     }
     
     .sidebar-mascot {
-        width: 120px;
+        display: none;
     }
     
     .sidebar-tagline {
-        font-size: 11px;
+        display: none;
     }
     
     .sidebar-version {
-        font-size: 10px;
+        display: none;
     }
     
     /* About section table: stack columns */
