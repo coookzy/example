@@ -1727,7 +1727,7 @@ ol li {
     }
     
     .left-sidebar {
-        display: none;
+        display: none !important;
     }
     
     .main-content-wrap {
@@ -1766,33 +1766,6 @@ ol li {
     
     h4 {
         font-size: 1.1rem;
-    }
-    
-    /* Navigation buttons: not shown on mobile */
-    .sidebar-nav-btn,
-    .sidebar-nav-disabled {
-        display: none;
-    }
-    
-    .sidebar-nav {
-        display: none;
-    }
-    
-    /* Sidebar images and content */
-    .sidebar-logo {
-        display: none;
-    }
-    
-    .sidebar-mascot {
-        display: none;
-    }
-    
-    .sidebar-tagline {
-        display: none;
-    }
-    
-    .sidebar-version {
-        display: none;
     }
     
     /* About section table: stack columns */
