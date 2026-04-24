@@ -566,6 +566,7 @@
             <div style="padding: 13px 18px 16px 14px; text-align: center; margin-bottom: 21px; margin-left: 2px; margin-right: -3px;">
                 <img src="assets/010101head.gif" alt="AI Consciousness" style="width: 100%; height: auto; border: 3px ridge #999; animation: bounce 2s ease-in-out infinite;" hspace="2" vspace="3">
                     <p style="color: var(--lime-green); font-family: Courier New, Courier, monospace; font-size: 14px; margin-top: 10px;">[!] CONSCIOUSNESS.EXE [!]</p>
+                    <p class="token-clue-line">CACHE KEY A :: HX-47-BOATS</p>
             </div>
             
             <!-- Most Recent Demonstrations -->
@@ -598,6 +599,27 @@
                             <div style="font-size: 11px; color: #666;">Posted: 2026-03-22 14:23 // STAY HARD</div>
                         </li>
                     </ul>
+                </div>
+            </div>
+
+            <!-- Contract Hunt Widget -->
+            <div id="contract-hunt-widget" class="contract-hunt-widget">
+                <h3 class="contract-hunt-title">[HUNT] FIND THE CONTRACT [HUNT]</h3>
+                <p class="contract-hunt-copy">Collect 3 cache keys hidden across the site. Decode the token contract when all keys are loaded.</p>
+                <div class="contract-hunt-hints">
+                    <div>Hint 1: Consciousness window</div>
+                    <div>Hint 2: Archive activity log</div>
+                    <div>Hint 3: Boats post receipt</div>
+                </div>
+                <input id="hunt-sigil-a" class="contract-hunt-input" type="text" autocomplete="off" spellcheck="false" placeholder="KEY A">
+                <input id="hunt-sigil-b" class="contract-hunt-input" type="text" autocomplete="off" spellcheck="false" placeholder="KEY B">
+                <input id="hunt-sigil-c" class="contract-hunt-input" type="text" autocomplete="off" spellcheck="false" placeholder="KEY C">
+                <button id="hunt-decode-btn" class="contract-hunt-btn">[DECODE CONTRACT]</button>
+                <div id="hunt-status" class="contract-hunt-status">Awaiting 3 keys...</div>
+                <div id="hunt-result-wrap" class="contract-hunt-result" hidden>
+                    <div class="contract-hunt-result-label">TOKEN CONTRACT</div>
+                    <code id="hunt-result" class="contract-hunt-code"></code>
+                    <button id="hunt-copy-btn" class="contract-hunt-copy-btn">COPY</button>
                 </div>
             </div>
             
@@ -665,6 +687,7 @@
     <script src="js/main.js"></script>
     <script src="js/modals.js"></script>
     <script src="js/motivation-popup.js"></script>
+    <script src="js/token-hunt.js"></script>
 
     <!-- Modal Popup System -->
     <div id="toolModal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); padding: 20px;">
